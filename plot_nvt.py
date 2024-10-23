@@ -9,7 +9,7 @@ from pathlib import Path
 sns.set_style('darkgrid')
 thermo_file = Path('data/thermo_nvt.txt')
 thermostat_file = Path('data/thermostat_nvt.txt')
-FS = 12
+FS = 14
 
 thermo  = pd.read_table(thermo_file, names=['et', 'ek', 'v', 't', 'p'])
 thermostat = np.loadtxt(thermostat_file)

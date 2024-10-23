@@ -8,8 +8,7 @@ from pathlib import Path
 
 sns.set_style('darkgrid') 
 thermo_file = Path('data/thermo_nve.txt')
-thermostat_file = Path('data/thermostat_nve.txt')
-FS = 12
+FS = 14
 
 
 thermo  = pd.read_table(thermo_file, names=['et', 'ek', 'v', 't', 'p'])
